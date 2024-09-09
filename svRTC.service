@@ -1,0 +1,11 @@
+[Unit]
+Description=svRTC Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/npm start
+WorkingDirectory=/root/svRTC
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
